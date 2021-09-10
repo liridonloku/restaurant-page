@@ -3,7 +3,6 @@ import menuPane from './menu.js';
 import contactPane from './contact.js';
 
 export default function createPageStructure(content) {
-    console.log("create page structure");
     let header = document.createElement('div');
     header.classList.add('header');
     let title = document.createElement('h1');
@@ -30,7 +29,8 @@ export default function createPageStructure(content) {
     });
     let main = document.createElement('div');
     main.classList.add('main');
-    let footer = document.createElement('footer');
+    let footer = document.createElement('div');
+    footer.classList.add('footer');
     footer.textContent = 'Made by liridonloku, September 2021';
     nav.appendChild(home);
     nav.appendChild(menu);
