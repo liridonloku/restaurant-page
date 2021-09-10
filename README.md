@@ -1,2 +1,2 @@
 # restaurant-page
-A simple restaurant page made using webpack
+A simple restaurant page made with webpack
