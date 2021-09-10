@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/liridonloku/restaurant-page#readme",
   "devDependencies": {
+    "css-loader": "^6.2.0",
     "path-browserify": "^1.0.1",
+    "style-loader": "^3.2.1",
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0"
   },
