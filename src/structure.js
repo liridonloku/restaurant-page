@@ -1,3 +1,7 @@
+import homePane from './home.js';
+import menuPane from './menu.js';
+import contactPane from './contact.js';
+
 export default function createPageStructure(content) {
     console.log("create page structure");
     let header = document.createElement('div');
@@ -8,10 +12,22 @@ export default function createPageStructure(content) {
     nav.classList.add('nav');
     let home = document.createElement('button');
     home.textContent = 'Home';
+    home.addEventListener('click', () => {
+        main.replaceChildren();
+        homePane(main);
+    });
     let menu = document.createElement('button');
     menu.textContent = 'Menu';
+    menu.addEventListener('click', () => {
+        main.replaceChildren();
+        menuPane(main);
+    });
     let contact = document.createElement('button');
     contact.textContent = 'Contact';
+    contact.addEventListener('click', () => {
+        main.replaceChildren();
+        contactPane(main);
+    });
     let main = document.createElement('div');
     main.classList.add('main');
     let footer = document.createElement('footer');
