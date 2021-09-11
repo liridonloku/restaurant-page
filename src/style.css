@@ -64,6 +64,15 @@ img{
     width: 100%;
 }
 
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu > div > img {
+    height: 60%;
+}
+
 .contact-info{
     justify-self: center;
     align-self: center;
@@ -77,4 +86,19 @@ img{
     align-self: center;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu > div {
+        width: 45%;
+        height: 400px;
+    }
 }
