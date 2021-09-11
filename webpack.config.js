@@ -13,8 +13,13 @@ module.exports = {
             test: /\.css$/i,
             use: ['style-loader', 'css-loader'],
           },
+          {
+            test: /\.(png|svg|jpg|JPG|jpeg|gif)$/i,
+            type: 'asset/resource',
+          },
         ],
       },
+      
     resolve: {
         fallback: {
             util: require.resolve("util/")
