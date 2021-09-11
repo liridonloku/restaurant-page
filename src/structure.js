@@ -36,7 +36,7 @@ export default function createPageStructure(content) {
     nav.appendChild(menu);
     nav.appendChild(contact);
     header.appendChild(title);
-    homePane(main);
+    //homePane(main);
     content.appendChild(header);
     content.appendChild(nav);
     content.appendChild(main);
