@@ -5,6 +5,11 @@
     --highlight: #D7B19D;
 }
 
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body{
     margin: 0;
     background-color: var(--background);
@@ -57,6 +62,11 @@ button:hover{
 
 img{
     width: 100%;
+}
+
+.contact-info{
+    justify-self: center;
+    align-self: center;
 }
 
 .footer{
